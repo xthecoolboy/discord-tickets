@@ -1,0 +1,38 @@
+<div id="page-content-wrapper">
+  <div class="page-content card-panel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">ServerId</th>
+                  <th scope="col">User</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Creator</th>
+                  <th scope="col">Problem</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each tickets}}
+                  <tr>
+                    <th scope="row">{{@index}}</th>
+                    <td>{{this.ServerId}}</td>
+                    <td>{{this.userName}}</td>
+                    <td>{{this.status}}</td>
+                    <td>{{this.date}}</td>
+                    <td>{{this.creator}}</td>
+                    <td>{{this.problem}}</td>
+                  </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
